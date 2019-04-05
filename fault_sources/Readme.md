@@ -2,7 +2,7 @@
 
 Libraries required:
 
-Install LBFGS library from https://github.com/chokkan/liblbfgs
+Install LBFGS library from http://www.chokkan.org/software/liblbfgs/ (I recommend downloading from the link labelled "source code." The library labelled from their github repo did not compile in my laptop.)
 
 Scripts to be run (in order) for a particular value of regularisation parameter c:
 
