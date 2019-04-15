@@ -1,0 +1,14 @@
+import os
+
+env = Environment(ENV = os.environ,CC='gcc')
+env.Append(CCFLAGS=['-fopenmp','-g'])
+env.Prepend(LIBS=['m','liblbfgs'])
+ldflags='-fopenmp'
+
+mod=env.Program('modeling.exe','modeling.c',LINKFLAGS=ldflags)
+fwi=env.Program('lbfwi.exe','lbfwi.c',LINKFLAGS=ldflags)
+
+
+#Depends(mod,['win_overt.bin','fdutil.c'])
+#Depends(fwi,['win_overt.bin','lbfunc.c'])
+
