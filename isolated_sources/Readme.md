@@ -12,11 +12,11 @@ Scripts to be run (in order) for a particular value of regularisation parameter 
 
 3. ./modeling.exe: Run the modeling code with OpenMP and all available threads.
 modeling_slurm.sh : SLURM script to run modelling code. Note: Use this ONLY if you have SLURM scheduler installed
-Sample execution time: 24 seconds on 2 x Intel Xeon Processor E5-2680 v3 12C 2.5GHz 30MB 2133MHz
+Sample execution time: 24 seconds on  Intel Xeon Processor E5-2680 v3 24 Cores 2.5GHz 30MB 2133MHz
 
 4. ./lbfwi.exe: Run the inversion code with OpenMP and all available threads.
 inversion_slurm.sh: SLURM script to run inversion code. Note: Use this ONLY if you have SLURM scheduler installed
-Sample execution time: 300 seconds on 2 x Intel Xeon Processor E5-2680 v3 12C 2.5GHz 30MB 2133MHz
+Sample execution time: 300 seconds on 2 x Intel Xeon Processor E5-2680 v3 24 Cores 2.5GHz 30MB 2133MHz
 
 5. blobslices.py : Python script to isolate blobs and plot them. Outputs the isolated sources and the wavelets extracted from the centre of the blobs.
 
